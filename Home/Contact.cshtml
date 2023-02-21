@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234182.74529032293!2d72.80050301717877!3d23.492712984716945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395dc661294f74c7%3A0x40a745103eaf0224!2sSabar%20Gram%20Vidhyapith!5e0!3m2!1sen!2sin!4v1595057295135!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<div class="container_gray_bg">
+    <div class="container margin_60">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="box_style_1">
+                    <div class="indent_title_in">
+                        <i class="pe-7s-mail-open-file"></i>
+                        <h3>Inquiry Form</h3>
+                        <p style="margin-top:5px;">
+                            Send your inquiry here and we will get back to you asap!
+                        </p>
+                    </div>
+                    <div class="wrapper_indent">
+                        <form action="/ContactUs" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="DAhrVv4bsMRXUz6GhpLvcWjr4FNnYGROZ05maqwoeEaw2VSDYPBGwTX4Fivn72EW4fjAZS6h4Y9saxaQ6maMqeKoMy6NbycvifFdbkWHIn01" />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="FirstName">First Name</label>
+                                        <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of &#39;100&#39;." data-val-maxlength-max="100" data-val-required="The First Name field is required." id="FirstName" name="FirstName" type="text" value="" />
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="LastName">Last Name</label>
+                                        <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of &#39;100&#39;." data-val-maxlength-max="100" data-val-required="The Last Name field is required." id="LastName" name="LastName" type="text" value="" />
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Email">Email</label>
+                                        <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Email must be a string or array type with a maximum length of &#39;100&#39;." data-val-maxlength-max="100" data-val-required="The Email field is required." id="Email" name="Email" type="text" value="" />
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Phone">Phone</label>
+                                        <input class="form-control text-box single-line" data-val="true" data-val-regex="Just input a 10-digit number like 98XXXXXXXXXX. No need to add 0, +91 or spaces." data-val-regex-pattern="^([0-9]{10})$" data-val-required="The Phone field is required." id="Phone" name="Phone" type="text" value="" />
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="Message">Message</label>
+<textarea class="form-control" cols="20" data-val="true" data-val-required="The Message field is required." id="Message" name="Message" rows="2" style="height:180px;"></textarea>
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6LdwFxAUAAAAAAQa8QL6tKm10PSJ_h1WHfXn6NZ0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Submit" class="button add_bottom_30" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-md-3">
+                <h3> Get in touch</h3>
+                <p>
+                    <strong> Address : </strong>Sabar Gramseva Mahavidyalay <br />
+                    At & Po Sonasan,
+                    Ta. Prantij, <br />Dist. Sabarkantha
+                    Gujarat, 383210 IN
+                    <br />
+                    <strong> Phone : </strong><a target="_blank" href="tel:+919428556478">+919428556478</a>
+                    <br />
+                    <strong> Email : </strong><a target="_blank" href="mailto:sgvsonasan@yahoo.com">sgvsonasan@yahoo.com</a>
+                </p>
+                <h5> <strong> Get directions</strong></h5>
+                <form action="https://maps.google.com/maps" method="get" target="_blank">
+                    <div class="form-group">
+                        <input type="text" name="saddr" placeholder="Enter your location" class="form-control styled">
+                        <input type="hidden" name="daddr" value="Sabar Gram Vidhyapith">
+                    </div>
+                    <input type="submit" value="Get directions" class="button small nomargin">
+                </form>
+            </aside>
+        </div>
+    </div>
+</div>

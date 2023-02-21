@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - sabargram</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/sabargram.styles.css" asp-append-version="true" />
+    <base href="/" />
+
+    <meta name="author" content="Shakunsoft">
+    <title>Sabar Gramseva Mahavidyalay [NAAC Accredited] &ndash; College </title>
+    <meta name="description" content="BRS (Bachelor of Rural Studies),
+          MRS (Master of Rural Studies) and MSW (Master of Social Work) courses in Prantij, Gujarat, India.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="layerslider/skins/v5/skin.css" type="text/css">
+    <link href="/css/final.css" rel="stylesheet" />
+
+
+
+
+</head>
+<body>
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index"><img src="img/logo.png" title="Sabar Gramseva Mahavidyalay" alt="Sabar Gramseva Mahavidyalay" data-retina="true"></a>
+                    </div>
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu Mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="/img/logo.png" title="Sabar Gramseva Mahavidyalay" alt="Sabar Gramseva Mahavidyalay" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Index">Home </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="College">College</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Trust <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Foundation">Shree Gopaldas Patel Foundation</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="BoardOfDirectors">Board of Directors</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Student's Corner<i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Courses">Courses</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Alumni">Alumni</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Faculties">Faculties</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 col-sm-3">
+                    <p id="logo_footer">
+                        <img src="img/logo.png" title="Sabar Gramseva Mahavidyalay" alt="Sabar Gramseva Mahavidyalay" data-retina="true">
+                    </p>
+                    <p>
+                        Sabar Gramseva Mahavidyalay is a rural studies college in Gujarat, India.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Resources</h4>
+                    <ul>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home </a></li>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="Foundation">Shree Gopaldas Patel Foundation</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="BoardOfDirectors">Board of Directors</a></li>
+                        <li>  <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Quicklinks</h4>
+                    <ul>
+                        <li>       <a asp-area="" asp-controller="Home" asp-action="College">College</a> </li>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="Courses">Courses</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Alumni">Alumni</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Faculties">Faculties</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Get in touch</h4>
+                    <ul id="contacts_footer">
+                        <li>
+                            <strong>Address: </strong>Sabar Gramseva Mahavidyalay <br />
+                            At & Po Sonasan,
+                            Ta. Prantij, <br />Dist. Sabarkantha
+                            Gujarat, 383210 IN
+                        </li>
+                        <li>Phone: <a target="_blank" href="tel:+919428556478">+919428556478</a></li>
+                        <li>Email: <a target="_blank" href="mailto:sgvsonasan@yahoo.com">sgvsonasan@yahoo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="copy">
+        <div class="container copyright">
+            &copy; Sabar Gramseva Mahavidyalay 2023 - All rights reserved. | Designed with ♥ by <a href="https://www.shakunsoft.com/" target="_blank">Shakunsoft</a>
+        </div>
+    </div>
+
+   
+
+  
+    <script src="js/final_min.js"></script>
+    <script src="/layerslider/js/layerslider-final-min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
